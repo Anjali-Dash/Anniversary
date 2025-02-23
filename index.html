@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary!</title>
+    <style>
+        body {
+            background-image: url("bg.png"); /* Use background-image */
+            background-size: cover; /* or contain, depending on your preference */
+            background-repeat: no-repeat;
+            background-color: #ad2f70; /* This will be a fallback if the image doesn't load */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        button {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Anniversary!</h1>
+        <button id="celebrateBtn">Let's Celebrate Your Anniversary</button>
+    </div>
+
+    <script>
+        const celebrateBtn = document.getElementById('celebrateBtn');
+
+        celebrateBtn.addEventListener('click', () => {
+            window.location.href = 'anniversary.html';
+        });
+    </script>
+</body>
+</html>
